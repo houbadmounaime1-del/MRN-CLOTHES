@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>متجر الملابس</title>
+<title>MRN STORE</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,22 +10,69 @@
 
 <header>
   <h1>MRN STORE</h1>
-  <p>أفضل الملابس بأحسن الأسعار</p>
+  <p>أفضل الملابس – الدفع عند الاستلام</p>
 </header>
 
-<section class="product">
-  <img src="shirt.jpg" alt="قميص">
-  <h2>قميص رجالي</h2>
-  <p class="price">3200 دج</p>
+<div class="products">
 
-  <form action="https://formsubmit.co/YOUREMAIL@gmail.com" method="POST">
-    <input type="hidden" name="_next" value="thankyou.html">
-    <input type="text" name="الاسم" placeholder="اسمك" required>
-    <input type="tel" name="الهاتف" placeholder="رقم الهاتف" required>
-    <input type="text" name="العنوان" placeholder="العنوان" required>
-    <button type="submit">اطلب الآن</button>
-  </form>
-</section>
+  <!-- منتج 1 -->
+  <div class="product">
+    <img src="images/shirt1.jpg">
+    <h3>قميص رجالي</h3>
+    <p class="price">3200 دج</p>
+
+    <form action="https://formsubmit.co/YOUREMAIL@gmail.com" method="POST">
+      <input type="hidden" name="المنتج" value="قميص رجالي">
+      <input type="hidden" name="السعر" value="3200 دج">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <input type="text" name="الاسم" placeholder="اسمك" required>
+      <input type="tel" name="الهاتف" placeholder="رقم الهاتف" required>
+      <input type="text" name="العنوان" placeholder="العنوان" required>
+
+      <button type="submit">اطلب الآن</button>
+    </form>
+  </div>
+
+  <!-- منتج 2 -->
+  <div class="product">
+    <img src="images/shirt2.jpg">
+    <h3>سويت شيرت</h3>
+    <p class="price">4500 دج</p>
+
+    <form action="https://formsubmit.co/YOUREMAIL@gmail.com" method="POST">
+      <input type="hidden" name="المنتج" value="سويت شيرت">
+      <input type="hidden" name="السعر" value="4500 دج">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <input type="text" name="الاسم" placeholder="اسمك" required>
+      <input type="tel" name="الهاتف" placeholder="رقم الهاتف" required>
+      <input type="text" name="العنوان" placeholder="العنوان" required>
+
+      <button type="submit">اطلب الآن</button>
+    </form>
+  </div>
+
+  <!-- منتج 3 -->
+  <div class="product">
+    <img src="images/pants.jpg">
+    <h3>بنطال رجالي</h3>
+    <p class="price">3800 دج</p>
+
+    <form action="https://formsubmit.co/YOUREMAIL@gmail.com" method="POST">
+      <input type="hidden" name="المنتج" value="بنطال رجالي">
+      <input type="hidden" name="السعر" value="3800 دج">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <input type="text" name="الاسم" placeholder="اسمك" required>
+      <input type="tel" name="الهاتف" placeholder="رقم الهاتف" required>
+      <input type="text" name="العنوان" placeholder="العنوان" required>
+
+      <button type="submit">اطلب الآن</button>
+    </form>
+  </div>
+
+</div>
 
 </body>
 </html>
