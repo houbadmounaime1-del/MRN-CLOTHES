@@ -94,45 +94,27 @@ footer p {
 /* تصميم خاص بالهاتف */
 @media (max-width: 768px) {
 
-  body {
-    font-size: 16px;
-  }
-
-  header h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .products {
-    padding: 10px;
-  }
-
   .product {
-    max-width: 100%;
-    margin: 15px auto;
-    border-radius: 10px;
+    max-width: 100%;     /* يأخذ عرض الهاتف */
+    padding: 30px;       /* تكبير البطاقة */
+    margin: 20px auto;
   }
 
   .product img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    min-height: 300px;   /* صورة أكبر */
+    object-fit: cover;
   }
 
   .product h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 20px;     /* عنوان أكبر */
   }
 
   .product p {
-    font-size: 15px;
+    font-size: 16px;     /* وصف أوضح */
   }
 
   .price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #d32f2f;
-    margin: 10px 0;
+    font-size: 22px;     /* سعر أكبر */
   }
 
   button,
