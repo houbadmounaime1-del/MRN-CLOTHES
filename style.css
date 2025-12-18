@@ -4,7 +4,7 @@ body {
   direction: rtl;
 
   /* صورة الخلفية */
-  background-image: url("images/backgrounde.jpg");
+  background-image: url("images/bge.jpg");
   background-size: cover;        /* تغطي الشاشة */
   background-position: center;   /* في الوسط */
   background-repeat: no-repeat;  /* بدون تكرار */
