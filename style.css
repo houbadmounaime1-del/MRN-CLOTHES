@@ -35,6 +35,12 @@ header {
   border-radius: 12px;
 }
 
+.product {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;   /* يوسّط المنتج */
+}
+
 .price {
   font-size: 20px;
   font-weight: bold;
