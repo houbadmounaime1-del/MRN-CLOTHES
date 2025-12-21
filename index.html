@@ -18,8 +18,68 @@
 </section>
 
 <hr>
+<script>
+  let products = JSON.parse(localStorage.getItem("products")) || [];
+
+  function displayProducts() {
+    const container = document.getElementById("products");
+    container.innerHTML = "";
+
+    products.forEach(p => {
+      container.innerHTML += `
+        <div class="product">
+          <img src="images/${p.image}">
+          <h2>${p.name}</h2>
+          <p>${p.desc}</p>
+          <p class="price">${p.price} دج</p>
+        </div>
+      `;
+    });
+  }
+
+  function addProduct() {
+    const name = document.getElementById("pName").value;
+    const price = document.getElementById("pPrice").value;
+    const image = document.getElementById("pImage").value;
+    const desc = document.getElementById("pDesc").value;
+
+    if (!name || !price || !image) {
+      alert("يرجى ملء المعلومات");
+      return;
+    }
+
+    products.push({ name, price, image, desc });
+    localStorage.setItem("products", JSON.stringify(products));
+
+    displayProducts();
+
+    document.getElementById("pName").value = "";
+    document.getElementById("pPrice").value = "";
+    document.getElementById("pImage").value = "";
+    document.getElementById("pDesc").value = "";
+  }
+
+  displayProducts();
+</script>
 
 <body>
+  <!-- نموذج إضافة منتج -->
+<section class="add-product">
+  <h2>➕ إضافة منتج جديد</h2>
+
+  <input type="text" id="pName" placeholder="اسم المنتج">
+  <input type="number" id="pPrice" placeholder="السعر">
+  <input type="text" id="pImage" placeholder="اسم الصورة (مثال: shirt1.jpg)">
+  <textarea id="pDesc" placeholder="وصف المنتج"></textarea>
+
+  <button onclick="addProduct()">إضافة المنتج</button>
+</section>
+
+<hr>
+
+<!-- مكان ظهور المنتجات -->
+<div class="products" id="products"></div>
+
 
 <header>
   <h1>MRN-CLOTHES</h1>
